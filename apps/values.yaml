@@ -4,3 +4,8 @@ spec:
   source:
     repoURL: https://github.com/argoproj/argocd-example-apps
     targetRevision: HEAD
+  syncPolicy:
+    syncOptions:
+    automated:
+      prune: true
+      selfHeal: true
